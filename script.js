@@ -36,14 +36,7 @@ function toggleSize(){
   }
 }
 
-function lostRect(){
-  var lost = document.getElementById('rectangle').classlist;
-  if (lost.contains("blue"));{
-    lost.remove("blue");
-  }
-}
-    
- function disappear(){
+  function disappear(){
    var hidden = document.getElementById('rectangle').classList;
    if (hidden.contains("blue","green"));{
      hidden.remove("blue","green");
@@ -56,6 +49,5 @@ function lostRect(){
  if (coucou.contains("disappear"));{
      coucou.add("appear","blue");
  }
- 
- 
 }
+
