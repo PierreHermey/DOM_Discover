@@ -35,5 +35,12 @@ function toggleSize(){
     blue.add("blue");
   }
 }
+
+function lostRect(){
+  var lost = document.getElementById('rectangle').classlist;
+  if (lost.contains("blue"));{
+    lost.remove("blue");
+  }
+}
     
  
