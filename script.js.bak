@@ -8,9 +8,6 @@ function changeHeight() {
   console.log(rect.clientHeight + 10);
   /*console.log(rect.clientHeight);*/
    }
-   if ( rect.clientHeight >= 300 ){
-   	rect.style.height = "100px";
-  	
-   }
+   
  
 }

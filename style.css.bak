@@ -20,7 +20,7 @@ p{
     cursor: pointer; /* Pointer/hand icon */
     float: center; /* Float the buttons side by side */
 		margin-top:400px;
-		margin-left:200px;
+		margin-left:50px;
 
 }
 

@@ -18,7 +18,7 @@
 			</p>
 			<div id="rectangle"> </div>
 			<div class="btn-group">
- 				 <button id="augmente-hauteur" onclick="changeHeight();">Augmente-hauteur</button>
+ 				 <button id="augmente-hauteur">Augmente-hauteur</button>
  				 <button id="vert">rectangle-vert</button>
  				 <button id="couleur-iniltal">couleur-initial</button>
  				 <button id="disparaitre">disparaître</button>
