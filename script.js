@@ -43,7 +43,8 @@ function toggleSize(){
      hidden.add("disappear");
    }
  }
-function appear(){
+ 
+ function appear(){
  var coucou = document.getElementById('rectangle').classList;
  if (coucou.contains("disappear"));{
      coucou.add("appear","blue");
