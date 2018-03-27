@@ -1,4 +1,11 @@
 p{
 	text-align: center;
-	
+}
+
+.textNormal {
+	font-size:20px;
+}
+
+.textGrow {
+	font-size: 30px;
 }

@@ -1,6 +1,14 @@
-function resizeText(multiplier) {
-  if (document.body.style.fontSize == "") {
-    document.body.style.fontSize = "1.0em";
+function toggleSize() {
+  var mySizeClasses = document.getElementById("btn").classList;
+
+  if (mySizeClasses.contains("textNormal")) {
+    mySizeClasses.remove("textNormal");
+  } else {
+    mySizeClasses.add("textNormal");
   }
-  document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+  if (mySizeClasses.contains("textGrow")) {
+    mySizeClasses.remove("textGrow");
+  } else {
+    mySizeClasses.add("textGrow");
+  }
 }
