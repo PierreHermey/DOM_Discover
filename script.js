@@ -19,3 +19,21 @@ function toggleSize(){
   
   }
   }
+
+  function toggleGreen(){
+    var green = document.getElementById('rectangle').classList;
+    if (green.contains("blue"));{
+    green.remove("blue");
+    green.add("green");
+  }
+  }
+
+  function returnBlue(){
+  var blue = document.getElementById('rectangle').classList;
+  if (blue.contains("green"));{
+    blue.remove("green");
+    blue.add("blue");
+  }
+}
+    
+ 
