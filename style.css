@@ -1,6 +1,15 @@
 p{
 	text-align: center;
 }
+
+.textNormal {
+	font-size:20px;
+}
+
+.textGrow {
+	font-size: 30px;
+}
+
 #rectangle{
 	width:100px;
 	height:100px;
@@ -40,10 +49,3 @@ p{
 	background-color: #3e8e41;
 }
 
-.textNormal {
-	font-size:20px;
-}
-
-.textGrow {
-	font-size: 30px;
-}
