@@ -13,7 +13,6 @@ p{
 #rectangle{
 	width:100px;
 	height:100px;
-	background: blue;
 	margin: 10px auto;
 /*	display:flex;
 	align-items: center;*/
@@ -21,6 +20,13 @@ p{
 	top:50%;
 	left:50%;
 }
+.blue{
+	background-color: blue;
+}
+.green{
+	background-color: green;
+}
+
 .btn-group button {
     background-color: #4CAF50; /* Green background */
     border: 1px solid green; /* Green border */
