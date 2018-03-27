@@ -17,14 +17,18 @@ p{
 /*	display:flex;
 	align-items: center;*/
 	position: absolute;
-	top:50%;
+	top:22%;
 	left:50%;
 }
 .blue{
 	background-color: blue;
+	visibility: 100%;
 }
 .green{
 	background-color: green;
+}
+button{
+	text-align: center;
 }
 
 .btn-group button {
@@ -34,8 +38,10 @@ p{
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     float: center; /* Float the buttons side by side */
-		margin-top:400px;
-		margin-left:200px;
+	display: flex;
+	justify-content: column;
+	width: 200px;
+		
 
 }
 
@@ -53,5 +59,9 @@ p{
 /* Add a background color on hover */
 .btn-group button:hover {
 	background-color: #3e8e41;
+}
+
+.disappear {
+	visibility: hidden;
 }
 
