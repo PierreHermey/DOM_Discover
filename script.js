@@ -39,9 +39,8 @@ function toggleSize(){
  function disappear(){
    var hidden = document.getElementById('rectangle').classList;
    if (hidden.contains("blue","green"));{
-     hidden.remove("blue","green");
      hidden.add("disappear");
    }
  }
 
- 
+
