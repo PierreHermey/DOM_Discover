@@ -37,5 +37,13 @@ p{
 
 /* Add a background color on hover */
 .btn-group button:hover {
-    background-color: #3e8e41;
+	background-color: #3e8e41;
+}
+
+.textNormal {
+	font-size:20px;
+}
+
+.textGrow {
+	font-size: 30px;
 }
