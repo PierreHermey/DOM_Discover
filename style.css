@@ -13,11 +13,8 @@ p{
 #rectangle{
 	width:100px;
 	height:100px;
-	margin: 10px auto;
-/*	display:flex;
-	align-items: center;*/
 	position: absolute;
-	top:22%;
+	top:340px;
 	left:50%;
 }
 .blue{

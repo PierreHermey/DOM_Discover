@@ -1,3 +1,6 @@
+var rect = document.getElementById('rectangle')
+var classes = rect.classList
+
 function toggleSize(){
   var mySizeClasses = document.getElementById("btn").classList;
   if (mySizeClasses.contains("textNormal")) {
@@ -10,7 +13,7 @@ function toggleSize(){
   }
   
   function changeHeight() {
-  var rect = document.getElementById('rectangle'); 
+ 
   if ( rect.clientHeight < 300 ){
   rect.style.height =	(rect.clientHeight + 10) + "px";
   }
@@ -21,41 +24,48 @@ function toggleSize(){
   }
 
   function toggleGreen(){
-    var green = document.getElementById('rectangle').classList;
-    if (green.contains("blue"));{
-    green.remove("blue");
-    green.add("green");
+    if (classes.contains("blue"));{
+      classes.remove("blue");
+      classes.add("green");
   }
   }
 
   function returnBlue(){
-  var blue = document.getElementById('rectangle').classList;
-  if (blue.contains("green"));{
-    blue.remove("green");
-    blue.add("blue");
+  if (classes.contains("green"));{
+    classes.remove("green");
+    classes.add("blue");
   }
 }
 
-function lostRect(){
-  var lost = document.getElementById('rectangle').classlist;
-  if (lost.contains("blue"));{
-    lost.remove("blue");
-  }
-}
     
  function disappear(){
-   var hidden = document.getElementById('rectangle').classList;
-   if (hidden.contains("blue","green"));{
-     hidden.remove("blue","green");
-     hidden.add("disappear");
+   if (classes.contains("blue","green"));{
+    classes.remove("blue","green");
+    classes.add("disappear");
    }
  }
  
  function appear(){
- var coucou = document.getElementById('rectangle').classList;
- if (coucou.contains("disappear"));{
-     coucou.add("appear","blue");
+ if (classes.contains("disappear"));{
+  classes.add("appear","blue");
  }
  
  
 }
+
+
+
+document.body.addEventListener('keydown', function(event) {
+
+  if(event.keyCode == 38)
+    rect.style.top="240px";
+  
+})
+
+
+document.body.addEventListener('keyup', function(event) {
+
+  if(event.keyCode == 38) 
+    rect.style.top="340px";
+  
+}) 
