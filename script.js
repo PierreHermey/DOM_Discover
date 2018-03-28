@@ -51,19 +51,3 @@ function toggleSize(){
   }
  }
 
-// BOUTON DEPLACER 
-var zone = document.getElementById('zonerectangle');
-var bluerect = document.getElementById('rectangle');
-var x; var y;
-
-document.onkeydown = function(event){
-  if (event.keyCode == 38) haut();
-}
-
-function haut(){
-  y = getComputedStyle(bluerect).top;
-  y = parseInt(y);
-  y = y-100; 
-  y = y + "px";
-  bluerect.style.top = y;
-}
