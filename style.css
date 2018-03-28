@@ -38,7 +38,7 @@ p{
 }
 
 .green{
-	background-color: green;
+	background: linear-gradient(to top, white, green);
 }
 
 button{

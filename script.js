@@ -63,16 +63,3 @@ document.body.addEventListener('keyup', function(event) {
   if(event.keyCode == 38) 
     rect.style.top="600px"; 
 })
-
-document.body.addEventListener('keydown', function(event) {
-
- if(event.keyCode == 40 )
-    rect.style.bottom="500px"; 
-})
-
-
-document.body.addEventListener('keyup', function(event) {
-
-  if(event.keyCode == 40) 
-    rect.style.bottom="400px"; 
-}) 
