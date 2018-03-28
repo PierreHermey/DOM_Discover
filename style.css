@@ -29,7 +29,7 @@ p{
 	position: absolute;
 	top:600px;
 	left:50%;
-	transition: 1s;
+	transition: 0.7s;
 	box-shadow: 2px 2px 5px black;
 }
 
