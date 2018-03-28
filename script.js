@@ -58,7 +58,7 @@ function toggleSize(){
 document.body.addEventListener('keydown', function(event) {
 
   if(event.keyCode == 38)
-    rect.style.top="50%";
+    rect.style.top="500px";
   
 })
 
@@ -66,6 +66,6 @@ document.body.addEventListener('keydown', function(event) {
 document.body.addEventListener('keyup', function(event) {
 
   if(event.keyCode == 38) 
-    rect.style.top="60%";
+    rect.style.top="600px";
   
 }) 
