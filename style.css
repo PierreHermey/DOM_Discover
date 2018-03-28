@@ -52,7 +52,6 @@ button{
 	width: 200px;
 	display: block;
 	font-family: cursive;
-	border-radius: 15px 15px 15px 15px;
 }
 
 .btn-group button:not(:last-child) {
