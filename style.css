@@ -2,13 +2,12 @@
 margin: 0px;
 padding: 0px;
 }
+
 body{
-	background-image: url(Flower.png);
+	background-image: url(image/Flower.png);
 	background-size: cover;
-	
-	
-	
 }
+
 p{
 	text-align: center;
 	color: white;
@@ -30,21 +29,16 @@ p{
 	position: absolute;
 	top:600px;
 	left:50%;
-	transition: 0.5sec;
-	
-	
-
-	
 }
+
 .blue{
 	background-color: rgb(64,20,164) ;
-	
-	
-	
 }
+
 .green{
 	background-color: green;
 }
+
 button{
 	text-align: center;
 }
@@ -58,10 +52,7 @@ button{
 	width: 200px;
 	display: block;
 	font-family: cursive;
-
-
-		
-
+	border-radius: 15px 15px 15px 15px;
 }
 
 .btn-group button:not(:last-child) {
@@ -81,6 +72,7 @@ button{
 .appear{
 	visibility: visible;
 }
+
 .btn-group{
 	display: flex;
 	justify-content: space-around;
