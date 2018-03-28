@@ -1,5 +1,18 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+body{
+	background-image: url(flower.png);
+	background-size: cover;
+	
+	
+	
+}
 p{
 	text-align: center;
+	color: white;
+	font-family: cursive;
 }
 
 .textNormal {
@@ -14,14 +27,12 @@ p{
 	width:100px;
 	height:100px;
 	margin: 10px auto;
-/*	display:flex;
-	align-items: center;*/
 	position: absolute;
-	top:22%;
+	top:60%;
 	left:50%;
 }
 .blue{
-	background-color: blue;
+	background-color: rgb(64,20,164) ;
 	
 }
 .green{
@@ -32,15 +43,16 @@ button{
 }
 
 .btn-group button {
-    background-color: #4CAF50; /* Green background */
-    border: 1px solid green; /* Green border */
+    background-color: rgb(222,12,50); 
+    border: 1px solid black; /* Green border */
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-    float: center; /* Float the buttons side by side */
-	display: flex;
-	justify-content: column;
 	width: 200px;
+	display: block;
+	font-family: cursive;
+
+
 		
 
 }
@@ -49,16 +61,10 @@ button{
     border-right: none; /* Prevent double borders */
 }
 
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 /* Add a background color on hover */
 .btn-group button:hover {
-	background-color: #3e8e41;
+	background-color: rgb(188,12,50);
 }
 
 .disappear {
@@ -67,4 +73,12 @@ button{
 
 .appear{
 	visibility: visible;
+}
+.btn-group{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
 }
