@@ -29,6 +29,7 @@ p{
 	position: absolute;
 	top:600px;
 	left:50%;
+	transition: 1s;
 }
 
 .blue{
