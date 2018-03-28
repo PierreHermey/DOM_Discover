@@ -30,9 +30,16 @@ p{
 	position: absolute;
 	top:600px;
 	left:50%;
+	transition: 0.5sec;
+	
+	
+
+	
 }
 .blue{
 	background-color: rgb(64,20,164) ;
+	
+	
 	
 }
 .green{
