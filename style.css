@@ -29,10 +29,12 @@ p{
 	position: absolute;
 	top:600px;
 	left:50%;
+	transition: 0.7s;
+	box-shadow: 2px 2px 5px black;
 }
 
 .blue{
-	background-color: rgb(64,20,164) ;
+	background: linear-gradient(to top, white, blue) ;
 }
 
 .green{
@@ -52,6 +54,7 @@ button{
 	width: 200px;
 	display: block;
 	font-family: cursive;
+	border-radius: 35px 5px 35px 5px;
 }
 
 .btn-group button:not(:last-child) {
