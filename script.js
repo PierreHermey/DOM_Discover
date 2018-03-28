@@ -50,6 +50,5 @@ function toggleSize(){
       coucou.add("appear","blue");
   }
  }
-
-}
+ 
 
