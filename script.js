@@ -48,9 +48,20 @@ function disappear(){
   classes.add("appear","blue");
  } 
 }
+//gauche
+document.body.addEventListener('keydown', function(event) {
+
+ if(event.keyCode == 37)
+    rect.style.left="500px"; 
+})
 
 
+document.body.addEventListener('keyup', function(event) {
 
+  if(event.keyCode == 37) 
+    rect.style.left="400px"; 
+})
+//haut
 document.body.addEventListener('keydown', function(event) {
 
  if(event.keyCode == 38)
@@ -62,4 +73,30 @@ document.body.addEventListener('keyup', function(event) {
 
   if(event.keyCode == 38) 
     rect.style.top="600px"; 
+})
+//droite
+document.body.addEventListener('keydown', function(event) {
+
+ if(event.keyCode == 39)
+    rect.style.right="500px"; 
+})
+
+
+document.body.addEventListener('keyup', function(event) {
+
+  if(event.keyCode == 39) 
+    rect.style.right="700px"; 
+})
+//bas
+document.body.addEventListener('keydown', function(event) {
+
+ if(event.keyCode == 38)
+    rect.style.bottom="700px"; 
+})
+
+
+document.body.addEventListener('keyup', function(event) {
+
+  if(event.keyCode == 38) 
+    rect.style.bottom="600px"; 
 })

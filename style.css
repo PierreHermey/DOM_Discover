@@ -29,7 +29,7 @@ p{
 	position: absolute;
 	top:600px;
 	left:50%;
-	transition: 0.5s;
+	/*transition: 0.5s;*/
 	box-shadow: 2px 2px 5px black;
 }
 
@@ -93,7 +93,7 @@ button{
 
 }
 
-}
+
 
 @media all and (max-width : 350px){
 
