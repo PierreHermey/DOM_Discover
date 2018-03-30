@@ -48,55 +48,34 @@ function disappear(){
   classes.add("appear","blue");
  } 
 }
-//gauche
-document.body.addEventListener('keydown', function(event) {
 
- if(event.keyCode == 37)
-    rect.style.left="500px"; 
-})
+var move = document.body.addEventListener;
 
-
-document.body.addEventListener('keyup', function(event) {
-
-  if(event.keyCode == 37) 
-    rect.style.left="400px"; 
-})
-//haut
-document.body.addEventListener('keydown', function(event) {
-
- if(event.keyCode == 38)
-    rect.style.top="500px"; 
-})
-
-
-document.body.addEventListener('keyup', function(event) {
-
-  if(event.keyCode == 38) 
-    rect.style.top="600px"; 
-})
-//droite
-document.body.addEventListener('keydown', function(event) {
-
- if(event.keyCode == 39)
-    rect.style.right="500px"; 
-})
-
-
-document.body.addEventListener('keyup', function(event) {
-
-  if(event.keyCode == 39) 
-    rect.style.right="700px"; 
-})
-//bas
-document.body.addEventListener('keydown', function(event) {
-
- if(event.keyCode == 38)
-    rect.style.bottom="700px"; 
-})
-
-
-document.body.addEventListener('keyup', function(event) {
-
-  if(event.keyCode == 38) 
-    rect.style.bottom="600px"; 
+move('keydown',function(event){
+ //gauche
+  if (event.keyCode==37){
+   var left = rect.style.left.replace('px', '');
+   console.log(left);
+  if (left > 0) {
+   rect.style.left=(rect.style.left.replace('px','')*1)-1 + "px";
+  }
+  
+  }
+  //droite
+  if (event.keyCode==39){
+  rect.style.left=(rect.style.left.replace('px','')*1)+1 + "px";
+  }
+  //haut
+  if (event.keyCode==38){
+   var top = rect.style.top.replace('px', '');
+   console.log(top);
+   if (top > 0){
+  rect.style.top=(rect.style.top.replace('px','')*1)-1 + "px";
+   }
+  }
+  //bas
+  if (event.keyCode==40){
+  rect.style.top=(rect.style.top.replace('px','')*1)+1 + "px";
+  }
+  
 })
