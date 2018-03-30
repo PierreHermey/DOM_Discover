@@ -1,6 +1,7 @@
 var rect = document.getElementById('rectangle')
 var classes = rect.classList
 
+
 function toggleSize(){
   var mySizeClasses = document.getElementById("btn").classList;
   if (mySizeClasses.contains("textNormal")) {
@@ -50,32 +51,52 @@ function disappear(){
 }
 
 var move = document.body.addEventListener;
+var zone = document.getElementById("zone");
+
+
 
 move('keydown',function(event){
- //gauche
-  if (event.keyCode==37){
-   var left = rect.style.left.replace('px', '');
-   console.log(left);
-  if (left > 0) {
-   rect.style.left=(rect.style.left.replace('px','')*1)-1 + "px";
-  }
-  
-  }
-  //droite
-  if (event.keyCode==39){
-  rect.style.left=(rect.style.left.replace('px','')*1)+1 + "px";
-  }
-  //haut
-  if (event.keyCode==38){
-   var top = rect.style.top.replace('px', '');
-   console.log(top);
-   if (top > 0){
-  rect.style.top=(rect.style.top.replace('px','')*1)-1 + "px";
-   }
-  }
-  //bas
-  if (event.keyCode==40){
-  rect.style.top=(rect.style.top.replace('px','')*1)+1 + "px";
-  }
-  
+//Movement
+var moveLeft = (rect.style.left.replace('px','')*1)-10 + "px";
+var moveRight = (rect.style.left.replace('px','')*1)+10 + "px";
+var moveUp = (rect.style.top.replace('px','')*1)-10 + "px";
+var moveDown = (rect.style.top.replace('px','')*1)+10 + "px";
+//Movement Stop
+var moveLeftStop = (rect.style.left.replace('px','')*1)+0+ "px";
+var moveUpStop = (rect.style.top.replace('px','')*1)+0 + "px";
+//Offset Object
+var goLeft = (rect.offsetLeft)
+var goTop = (rect.offsetTop)
+//Logs
+console.log(moveRight)
+console.log(goLeft)
+
+//BOUTON GAUCHE
+
+if (event.keyCode==37 ){
+rect.style.left=moveLeft
+}
+if (goLeft<10){
+rect.style.left=moveLeftStop
+}
+//BOUTON DROIT
+if (event.keyCode==39){
+rect.style.left=moveRight
+}
+
+// BOUTON HAUT
+
+if (event.keyCode==38){
+rect.style.top=moveUp
+}
+if (goTop<10){
+rect.style.top=moveUpStop
+}
+
+// BOUTON BAS
+if (event.keyCode==40){
+rect.style.top=moveDown
+}
+
+
 })
