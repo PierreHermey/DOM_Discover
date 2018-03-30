@@ -25,12 +25,17 @@ p{
 #rectangle{
 	width:100px;
 	height:100px;
-	margin: 10px auto;
+	margin: auto;
 	position: absolute;
-	top:600px;
-	left:50%;
-	transition: 0.5s;
 	box-shadow: 2px 2px 5px black;
+}
+
+.zone {
+	height: 500px;
+	width: 500px;
+	border: 2px black solid;
+	position: relative;
+	margin: auto;
 }
 
 .blue{

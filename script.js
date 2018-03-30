@@ -49,17 +49,23 @@ function disappear(){
  } 
 }
 
+var move = document.body.addEventListener;
 
-
-document.body.addEventListener('keydown', function(event) {
-
- if(event.keyCode == 38)
-    rect.style.top="500px"; 
-})
-
-
-document.body.addEventListener('keyup', function(event) {
-
-  if(event.keyCode == 38) 
-    rect.style.top="600px"; 
+move('keydown',function(event){
+  if (event.keyCode==37){
+  rect.style.left=(rect.style.left.replace('px','')*1)-1 + "px";
+  }
+  
+  if (event.keyCode==39){
+  rect.style.left=(rect.style.left.replace('px','')*1)+1 + "px";
+  }
+  
+  if (event.keyCode==38){
+  rect.style.top=(rect.style.top.replace('px','')*1)-1 + "px";
+  }
+  
+  if (event.keyCode==40){
+  rect.style.top=(rect.style.top.replace('px','')*1)+1 + "px";
+  }
+  
 })
